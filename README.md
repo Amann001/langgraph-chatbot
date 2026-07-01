@@ -4,14 +4,16 @@ A conversational AI chatbot built using LangGraph, LangChain, Groq, and Streamli
 
 ## Features
 
-- Conversational chat interface
+- Interactive Streamlit chat interface
 - LangGraph-powered backend
-- Streamlit frontend
-- Conversation memory
-- Thread-based persistence
 - Groq LLM integration
-- Real-time responses
-- Token streaming for real-time response generation
+- Conversation memory
+- MemorySaver persistence
+- Multi-turn conversations
+- Real-time token streaming
+- Resume previous chats using thread IDs
+- Multiple conversation support
+- Backend/frontend separation
 
 ## Tech Stack
 
@@ -25,16 +27,28 @@ A conversational AI chatbot built using LangGraph, LangChain, Groq, and Streamli
 - langgraph_backend.py
 - streamlit_frontend.py
 - streamlit_frontend_streaming.py
+- streamlit_frontend_threading.py
 - requirements.txt
 - README.md
 
-## Versions
+## Chat Capabilities
 
-### Basic UI
-- Standard chat interface
-- Full response displayed after generation
+- Start a new conversation
+- Resume an existing conversation
+- Stream responses in real time
+- Maintain conversation memory
+- Manage multiple chat sessions using unique thread IDs
 
-### Streaming UI
-- Tokens streamed in real time
-- Improved user experience
-- Uses LangGraph streaming API
+## Development Progress
+
+### Version 1
+- Basic Streamlit chatbot
+
+### Version 2
+- Conversation memory
+
+### Version 3
+- Token streaming
+
+### Version 4
+- Resume previous conversations using thread IDs
